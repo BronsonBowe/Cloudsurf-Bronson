@@ -1,6 +1,6 @@
 import React from "react";
 
-function LinkedInLink() {
+function Contact() {
   return (
     <a
       href="https://www.linkedin.com/in/bronsonbowe"
@@ -13,4 +13,4 @@ function LinkedInLink() {
 }
 // yup
 
-export default LinkedInLink;
+export default Contact;
