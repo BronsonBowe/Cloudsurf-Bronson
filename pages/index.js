@@ -2,10 +2,10 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import { ImgBronson } from "../resources";
-import { Box, Button } from "@mui/material";
+// import { Box } from "@mui/material";
 import { useRouter } from "next/router";
-import SideScrollNavBar from "./navbar/SideScrollNavBar";
-import Section from "./navbar/Section";
+import SideScrollNavBar from "../components/navbar/SideScrollNavBar";
+import Section from "../components/navbar/Section";
 import React from "react";
 import About from "./about";
 import Contact from "./contact";
@@ -17,7 +17,7 @@ export default function Home() {
       className={styles.container}
       style={{ backgroundColor: "aquamarine", maxWidth: "" }}
     >
-      <Box paddingTop="10px"></Box>
+      <SideScrollNavBar />
       <Image
         src={ImgBronson}
         style={{ width: 300, height: 300, borderRadius: 300 / 2 }}
@@ -173,10 +173,10 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-      <SideScrollNavBar />
-      <Section id="home" title="Home">
+
+      {/* <Section id="home" title="Home">
         <Home />
-      </Section>
+      </Section> */}
       <Section id="about" title="About">
         <About />
       </Section>
