@@ -177,12 +177,12 @@ export default function Home() {
       {/* <Section id="home" title="Home">
         <Home />
       </Section> */}
-      <Section id="about" title="About">
+      {/* <Section id="about" title="About">
         <About />
       </Section>
       <Section id="contact" title="Contact">
         <Contact />
-      </Section>
+      </Section> */}
     </div>
   );
 }
