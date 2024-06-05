@@ -4,7 +4,7 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "deploy": "aws s3 sync .next/ s3://bronson-website --acl public-read"
+    "deploy": "aws s3 sync out/ s3://bronson-website --acl public-read"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -14,7 +14,8 @@
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-scroll": "^1.9.0"
+    "react-scroll": "^1.9.0",
+    "sharp": "^0.33.4"
   },
   "engines": {
     "node": ">=18"
