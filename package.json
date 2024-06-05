@@ -4,7 +4,7 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "deploy": "aws s3 sync out/ s3://bronsonbowesawsbucket --delete"
+    "deploy": "aws s3 sync .next/ s3://bronsonbowesawsbucket --acl public-read"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
