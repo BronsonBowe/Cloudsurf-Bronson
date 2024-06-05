@@ -21,9 +21,9 @@ jobs:
             public
             .cache
             node_modules
-          key: ${{ runner.os }}-react-bronson-site-build-${{ github.run_id }}
+          key: ${{ runner.os }}-react-bronson-2-site-build-${{ github.run_id }}
           restore-keys: |
-            ${{ runner.os }}-react-bronson-site-build-${{ github.run_id }}
+            ${{ runner.os }}-react-bronson-2-site-build-${{ github.run_id }}
       - name: Install dependencies
         run: npm ci
       - name: Build
